@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+  
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: palegreen;
+            display: inline-block;
+           transition: all 5s ;
+          
+           margin: auto;
+           margin-top: 300px;
+           cursor: pointer;
+    
+        }
+
+        /* animation-name: box;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-delay: 1s; 
+            animation-timing-function: ease-out;*/
+            
+         
+        
+        .box:hover{
+            background-color: aqua;
+            border-radius: 200px;
+            height: 400px;
+            width: 400px;
+           /* transform: skew(160deg);*/
+           transform: translateX(250px);
+        /* transform: skew(45deg 90deg);*/
+        }
+        /*
+        @keyframes box {
+            from{
+                width: 100px;
+                height: 100px;
+                background-color: palevioletred;
+                border:2px solid blue;
+            }
+            to{
+                width: 1000px;
+                height: 900px;
+                background-color:blueviolet;
+                border: 2px dashed darkgoldenrod;
+            } 
+            0%{
+                left:0;
+                top:0;
+                border-radius: 10px;
+                border:1.5px solid blue;
+                background-image:url("");
+                
+            }
+            25%{
+                left:300px;
+                top:0;
+                background-color: aqua;
+                border-radius: 20px;
+                border:2px dashed greenyellow;
+            }
+            50%{
+                left:300px;
+                top:300px;
+                background-color: blueviolet;
+                border-radius: 30px;
+                border:2.5px dotted red;
+
+            }
+            75%{
+                left:600px;
+                top:300px;
+                background-color:darkorange;
+                border-radius: 40px;
+                 border:3px double palevioletred;
+            }
+            100%{
+                left:600px;
+                top:0;
+                background-color:brown;
+                border-radius:50px ;
+                border:3.5px solid saddlebrown ;
+            } 
+            
+        } */
+    </style>
+    <body>
+
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+    </body>
+
+</html>
