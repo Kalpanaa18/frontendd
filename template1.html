@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>template2</title>
+	<style> 
+     body{
+     	height:500vh;
+     	border:2px dashed black;
+     	display:grid;
+        grid-template-columns:3fr 11fr;
+        grid-gap:none;
+     }
+     .container{
+     	    border:1px solid blue;
+            height:100%;
+     }
+
+     #a {
+     	
+            position: sticky;
+            top:0%;
+            height:19.8%;
+           
+            display:grid;
+        grid-template-columns:4fr 1fr;
+        grid-gap:none;
+        }
+        #b{
+        	display:grid;
+        grid-template-rows:1fr 6fr 3fr 5fr 5fr 3fr 1fr;
+        grid-gap:none;
+        }
+        .box{
+        	border:1px solid green;
+        	width:100%;
+        }
+        #c{
+        	display:grid;
+        grid-template-columns:repeat(2,auto);
+        grid-gap:none;
+        }
+        .image{
+           border:1px dashed blue;
+        }
+        .section{
+        	border:1px solid pink;
+        }
+        #w{
+        	background-color:#f44336;
+        }
+
+	</style>
+</head>
+<body>
+<div class="container" id="a">
+	<div class="section" id="w">
+	</div>
+	<div class="section">
+	</div>
+   </div>
+   <div class="container" id="b">
+   	  <div class="box">
+   	  	<h1>Interior Design</h1>
+   	  	</div>
+   	  	<div class="box" id="c">
+   	  		<div class="image">
+   	  	    </div>
+   	  	    <div class="image">
+   	  	    </div>
+   	  	    <div class="image">
+   	  	    </div>
+   	  	    <div class="image">
+   	  	    </div>
+   	  	    <div class="image">
+   	  	    </div>
+   	  	    <div class="image">
+   	  	    </div>
+
+   	  	</div>
+   	  	<div class="box">
+   	  	</div>
+   	  	<div class="box">
+   	  	</div>
+   	  	<div class="box">
+   	  	</div>
+   	  	<div class="box">
+   	  	</div>
+   	  	<div class="box">
+   	  	</div>
+   </div>
+</div>
+</body>
+</html>

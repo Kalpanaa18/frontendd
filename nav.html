@@ -1,0 +1,109 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nav Bar</title>
+	<style>
+		body{
+			height:97vh;
+			
+			background-color:LightGrey;
+		}
+		.nav{
+			height:10%;
+			width:100%;
+			
+			display:grid;
+            grid-template-columns:7fr 1fr 1fr 1fr 1fr;
+            grid-gap:none;
+            background-color:black;
+		}
+		.navbar{
+			height:100%;
+			
+			  position: relative;
+           display: inline-block;
+		}
+		button{
+			background-color:black;
+			color:white;
+			height:100%;
+			width:100%;
+			font-size:17px;
+			font-style:italic;
+			cursor:pointer;
+		}
+		.dropdown{
+			display: none;
+			position:absolute;
+			 background-color:LightGrey;
+          min-width: 140px;
+          min-height:20px;
+         border:1px solid black;
+         text-align:center;
+          z-index: 1;
+
+		}
+		.navbar:hover .dropdown {
+  display: block;
+  color:LightGreys;
+}
+ p:hover, .navbar:hover button {
+  background-color: LightGrey;
+  color:black;
+}
+
+
+
+</style>
+</head>
+<body>
+   <div class="nav">
+      <div class="navbar"> 
+      </div>
+     <div class="navbar"> 
+      <button>Mens</button>
+       <div class="dropdown">
+  <p>Shirts</p>
+  <p>T-Shirts</p>
+  <p>Trouser</p>
+  <p>Shoes</p>
+  <p>Watches</p>
+  </div>
+     </div>
+     <div  class="navbar"> 
+      <button>Womens</button>
+       <div class="dropdown">
+  <p>Tops</p>
+  <p>Bottoms</p>
+  <p>Skirts</p>
+  <p>Shoes</p>
+  <p>Watches</p>
+  </div>
+     </div> 
+     <div  class="navbar"> 
+      <button>Kids</button>
+       <div class="dropdown">
+  <p>Shirts</p>
+  <p>T-shirts</p>
+  <p>Shorts</p>
+  <p>Toys</p>
+  <p>Stationary</p>
+  </div>
+     </div>
+     <div  class="navbar"> 
+     <button>Electronics</button>
+      <div class="dropdown">
+  <p>AC</p>
+  <p>Telivision</p>
+  <p>Mobile</p>
+  <p>Earphone</p>
+  <p>Laptop</p>
+  </div>
+     </div>
+
+   </div>
+</body>
+</html>
